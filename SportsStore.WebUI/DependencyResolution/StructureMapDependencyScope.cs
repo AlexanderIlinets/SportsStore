@@ -25,6 +25,7 @@ namespace SportsStore.WebUI.DependencyResolution {
     using Moq;
     using SportsStore.Domain.Abstract;
     using SportsStore.Domain.Entities;
+    using SportsStore.Domain.Concrete;
 	
     /// <summary>
     /// The structure map dependency scope.
@@ -43,7 +44,7 @@ namespace SportsStore.WebUI.DependencyResolution {
                 throw new ArgumentNullException("container");
             }
             Container = container;
-            AddBindings(container);
+            //AddBindings(container);
         }
 
         #endregion
